@@ -89,9 +89,9 @@ struct ContentView: View {
 
 
             // MARK: 右上にドラッグ
-            Rectangle()
+            Color.clear.contentShape(Rectangle())
                 .frame(width: 100, height: 100, alignment: .center)
-                .foregroundColor(.blue)
+                .foregroundColor(.clear)
                 .offset(x: model.offset.width, y: model.offset.height)
                 .gesture(
                     DragGesture(minimumDistance: 0, coordinateSpace: .global)
